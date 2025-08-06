@@ -9,7 +9,7 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'config.dart';
 
-class BrickBracker extends FlameGame {
+class BrickBracker extends FlameGame with HasCollisionDetection {
   // creating constructor
   BrickBracker()
     : super(
