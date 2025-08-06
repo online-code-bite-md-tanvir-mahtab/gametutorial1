@@ -19,7 +19,6 @@ class BrickBracker extends FlameGame with HasCollisionDetection {
         ),
       );
 
-  
   final rand = math.Random();
   double get width => size.x;
   double get height => size.y;
@@ -32,9 +31,10 @@ class BrickBracker extends FlameGame with HasCollisionDetection {
 
     world.add(PlayArea());
     world.add(
-      Ball(                                                     // Add from here...
+      Ball(
+        // Add from here...
         radius: ballRadius,
-        position: size/2,
+        position: size / 2,
         velocity: Vector2(
           (rand.nextDouble() - 0.5) * width,
           height * 0.2,
